@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://santiagosanabria-1.github.io/portafolio-completo/sitemap.xml
