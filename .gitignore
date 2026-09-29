@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Blender autosaves and backups
+*.blend1
+*.blend2
+blender/renders/*.png
+!blender/renders/.gitkeep
+
+# Local tooling output
+node_modules/
+.playwright-mcp/
+qa/
