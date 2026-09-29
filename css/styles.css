@@ -1073,6 +1073,12 @@ code {
 }
 .js [data-reveal].is-visible { opacity: 1; transform: none; }
 
+/* Stagger index for groups revealed together (30–80ms apart). */
+[data-delay="1"] { --i: 1; }
+[data-delay="2"] { --i: 2; }
+[data-delay="3"] { --i: 3; }
+[data-delay="4"] { --i: 4; }
+
 .hero__float { animation: float 9s var(--ease-in-out) infinite alternate; }
 
 @keyframes float {
