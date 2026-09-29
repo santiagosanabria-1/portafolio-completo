@@ -1,0 +1,38 @@
+# Publishes the static site: every push to main is mirrored to gh-pages,
+# which GitHub Pages serves. No build step — the repo is the site.
+#
+# The push is a plain fast-forward: gh-pages only ever follows main, and main
+# history is never rewritten. If it ever were, this job fails instead of
+# silently overwriting the published branch.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify referenced assets exist
+        run: |
+          missing=0
+          for f in $(grep -oE '(assets|css|js)/[A-Za-z0-9._/-]+' index.html | sort -u); do
+            [ -f "$f" ] || { echo "Missing: $f"; missing=1; }
+          done
+          exit $missing
+
+      - name: Mirror main to gh-pages (fast-forward)
+        run: git push origin HEAD:refs/heads/gh-pages

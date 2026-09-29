@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santiago Sanabria — Full Stack Developer</title>
+  <meta name="description" content="Portfolio de Santiago Sanabria, desarrollador Full Stack en Bucaramanga, Colombia. Aplicaciones web con React, Node.js, NestJS, PostgreSQL y proyectos con IA (RAG, LLM APIs, n8n).">
+  <meta name="author" content="Santiago Sanabria Rubiano">
+  <meta name="theme-color" content="#080808">
+  <meta name="color-scheme" content="dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:title" content="Santiago Sanabria — Full Stack Developer">
+  <meta property="og:description" content="Aplicaciones web completas: interfaz, API y base de datos. React, Node.js, NestJS, PostgreSQL e IA aplicada.">
+  <meta property="og:image" content="https://santiagosanabria-1.github.io/portafolio-completo/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://santiagosanabria-1.github.io/portafolio-completo/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://santiagosanabria-1.github.io/portafolio-completo/">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#home" aria-label="Santiago Sanabria, ir al inicio">
+        <svg class="brand__mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="3" y="4" width="18" height="3" rx="1.5" />
+          <rect x="3" y="10.5" width="12" height="3" rx="1.5" />
+          <rect x="3" y="17" width="6" height="3" rx="1.5" class="brand__accent" />
+        </svg>
+        <span>Santiago Sanabria</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="visually-hidden" data-nav-label>Abrir menú</span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Principal" data-nav>
+        <ul class="site-nav__list">
+          <li><a href="#home" data-nav-link>Inicio</a></li>
+          <li><a href="#about" data-nav-link>Sobre mí</a></li>
+          <li><a href="#projects" data-nav-link>Proyectos</a></li>
+          <li><a href="#contact" data-nav-link>Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-reveal>Full Stack Developer · Bucaramanga, Colombia</p>
+          <h1 class="hero__title" id="hero-title" data-reveal data-delay="1">
+            Santiago<br>Sanabria
+          </h1>
+          <p class="hero__lead" data-reveal data-delay="2">
+            Construyo aplicaciones web completas —interfaz, API y base de datos— e integro
+            automatización e inteligencia artificial donde resuelve un problema real.
+          </p>
+          <div class="hero__actions" data-reveal data-delay="3">
+            <a class="button button--primary" href="#projects">
+              Ver proyectos
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" /></svg>
+            </a>
+            <a class="button button--ghost" href="#contact">Contáctame</a>
+          </div>
+        </div>
+
+        <figure class="hero__art" data-hero-art>
+          <div class="hero__float">
+            <picture>
+              <source type="image/webp"
+                srcset="assets/img/hero-720.webp 720w, assets/img/hero-1100.webp 1100w, assets/img/hero-1500.webp 1500w"
+                sizes="(min-width: 1024px) 46vw, 88vw">
+              <img src="assets/img/hero-1100.webp" width="1100" height="1091"
+                alt="Render 3D creado en Blender: una pila de tres capas flotantes —una placa de grafito con barras que representan código, una placa de vidrio con una red de nodos y un bloque de vidrio esmerilado— que ilustra el paso de código a sistema a producto."
+                fetchpriority="high" decoding="async">
+            </picture>
+          </div>
+          <figcaption class="hero__labels" aria-hidden="true">
+            <span class="hero__label hero__label--product"><b>03</b> Producto</span>
+            <span class="hero__label hero__label--system"><b>02</b> Sistema</span>
+            <span class="hero__label hero__label--code"><b>01</b> Código</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <dl class="hero__facts" data-reveal data-delay="4">
+          <div>
+            <dt>Stack principal</dt>
+            <dd>React · Node.js · NestJS · PostgreSQL</dd>
+          </div>
+          <div>
+            <dt>Formación</dt>
+            <dd>Campuslands · SENA</dd>
+          </div>
+          <div>
+            <dt>Enfoque</dt>
+            <dd>Full stack + IA aplicada</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <header class="section-head">
+          <p class="section-index" data-reveal>01 — Sobre mí</p>
+          <h2 class="section-title" id="about-title" data-reveal data-delay="1">
+            Software que ahorra tiempo real a las personas que lo usan.
+          </h2>
+        </header>
+
+        <div class="about__body">
+          <p data-reveal>
+            Soy desarrollador Full Stack en formación en <strong>Campuslands</strong>, con base técnica
+            del <strong>SENA</strong> en sistemas teleinformáticos. Trabajo de punta a punta: interfaces en
+            React, APIs REST con Node.js, Express y NestJS, y modelos de datos en PostgreSQL con Prisma.
+          </p>
+          <p data-reveal data-delay="1">
+            Me interesan los problemas de docentes, pequeños negocios y áreas administrativas, y cómo
+            la IA —RAG, agentes y automatización con n8n— puede integrarse en un producto de forma
+            útil, segura y medible.
+          </p>
+
+          <ul class="stats">
+            <li class="stat" data-reveal data-delay="2">
+              <span class="stat__value">126</span>
+              <span class="stat__label">casos de prueba automatizados en TeacherTools</span>
+            </li>
+            <li class="stat" data-reveal data-delay="3">
+              <span class="stat__value">3</span>
+              <span class="stat__label">proveedores de LLM intercambiables: OpenAI, Gemini y Groq</span>
+            </li>
+            <li class="stat" data-reveal data-delay="4">
+              <span class="stat__value">20</span>
+              <span class="stat__label">repositorios públicos en GitHub</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head section-head--row">
+          <div>
+            <p class="section-index" data-reveal>02 — Tecnologías</p>
+            <h2 class="section-title" id="skills-title" data-reveal data-delay="1">Stack verificado en proyectos reales.</h2>
+          </div>
+          <p class="section-note" data-reveal data-delay="2">
+            Cada grupo indica dónde lo he usado. Nada de esta lista viene de un tutorial suelto.
+          </p>
+        </header>
+
+        <ul class="skill-list">
+          <li class="skill-row" data-reveal>
+            <h3 class="skill-row__title"><span>01</span> Frontend</h3>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>React</li>
+              <li>Vite</li><li>Tailwind CSS</li><li>GSAP</li><li>Framer Motion</li>
+            </ul>
+            <p class="skill-row__proof">TeacherTools · Black&nbsp;Crown&nbsp;Barber · CineVerse</p>
+          </li>
+          <li class="skill-row" data-reveal>
+            <h3 class="skill-row__title"><span>02</span> Backend</h3>
+            <ul class="chips">
+              <li>Node.js</li><li>Express</li><li>NestJS</li><li>REST APIs</li>
+              <li>JWT · cookies httpOnly</li><li>Swagger / OpenAPI</li>
+            </ul>
+            <p class="skill-row__proof">TeacherTools · EduConta&nbsp;AI · Sports&nbsp;Analyst</p>
+          </li>
+          <li class="skill-row" data-reveal>
+            <h3 class="skill-row__title"><span>03</span> Datos</h3>
+            <ul class="chips">
+              <li>PostgreSQL</li><li>Prisma</li><li>pgvector</li><li>MongoDB</li><li>Mongoose</li>
+            </ul>
+            <p class="skill-row__proof">TeacherTools · EduConta&nbsp;AI · Black&nbsp;Crown&nbsp;Barber</p>
+          </li>
+          <li class="skill-row" data-reveal>
+            <h3 class="skill-row__title"><span>04</span> IA y automatización</h3>
+            <ul class="chips">
+              <li>RAG</li><li>Embeddings locales</li><li>OpenAI API</li><li>Gemini API</li>
+              <li>Groq API</li><li>n8n</li>
+            </ul>
+            <p class="skill-row__proof">TeacherTools · EduConta&nbsp;AI</p>
+          </li>
+          <li class="skill-row" data-reveal>
+            <h3 class="skill-row__title"><span>05</span> Herramientas</h3>
+            <ul class="chips">
+              <li>Git</li><li>GitHub</li><li>Docker Compose</li><li>node:test · Supertest</li>
+              <li>Capacitor</li><li>Python</li><li>Blender</li>
+            </ul>
+            <p class="skill-row__proof">Flujo diario · este portfolio</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="projects__backdrop" aria-hidden="true">
+        <img src="assets/img/workspace-1280.webp"
+          srcset="assets/img/workspace-768.webp 768w, assets/img/workspace-1280.webp 1280w, assets/img/workspace-1920.webp 1920w"
+          sizes="100vw" width="1280" height="720" alt="" loading="lazy" decoding="async">
+      </div>
+
+      <div class="container">
+        <header class="section-head section-head--row">
+          <div>
+            <p class="section-index" data-reveal>03 — Proyectos</p>
+            <h2 class="section-title" id="projects-title" data-reveal data-delay="1">Trabajo seleccionado.</h2>
+          </div>
+          <p class="section-note" data-reveal data-delay="2">
+            Proyectos propios, con el estado real de cada uno. Solo enlazo repositorios y demos que existen.
+          </p>
+        </header>
+
+        <ol class="project-list">
+          <!-- 01 TeacherTools -->
+          <li class="project" data-reveal>
+            <article class="project__inner" aria-labelledby="p1-title">
+              <div class="project__media">
+                <div class="project__frame">
+                  <img src="assets/img/teachertools-1200.webp"
+                    srcset="assets/img/teachertools-720.webp 720w, assets/img/teachertools-1200.webp 1200w"
+                    sizes="(min-width: 1024px) 56vw, 92vw" width="1200" height="750" loading="lazy" decoding="async"
+                    alt="Captura de la landing de TeacherTools: titular «Prepara tus clases en minutos, no en horas» junto a una vista previa del panel de herramientas.">
+                </div>
+              </div>
+              <div class="project__content">
+                <p class="project__meta"><span>01</span> Full stack · IA · <span class="status status--active">En desarrollo activo</span></p>
+                <h3 class="project__title" id="p1-title">TeacherTools</h3>
+                <p class="project__summary">Workspace para docentes: planes de clase, quizzes, rúbricas e informes, con un AI Copilot como punto de entrada.</p>
+                <dl class="project__detail">
+                  <div><dt>Problema</dt><dd>Preparar clases y evaluaciones consume horas de trabajo docente, con el material disperso entre documentos.</dd></div>
+                  <div><dt>Solución</dt><dd>Backend Express con JWT en cookie <code>httpOnly</code> y límites Free/Pro validados en servidor; IA con proveedores intercambiables y RAG sobre planes de área con pgvector y embeddings locales. 126 pruebas de integración contra PostgreSQL real.</dd></div>
+                </dl>
+                <ul class="chips chips--small">
+                  <li>React 19</li><li>Vite</li><li>Express</li><li>PostgreSQL</li><li>Prisma</li><li>pgvector</li><li>Docker</li>
+                </ul>
+                <p class="project__note">Repositorio privado — código disponible para revisión bajo solicitud.</p>
+              </div>
+            </article>
+          </li>
+
+          <!-- 02 Black Crown Barber -->
+          <li class="project" data-reveal>
+            <article class="project__inner" aria-labelledby="p2-title">
+              <div class="project__media">
+                <div class="project__frame">
+                  <img src="assets/img/black-crown-barber-1200.webp"
+                    srcset="assets/img/black-crown-barber-720.webp 720w, assets/img/black-crown-barber-1200.webp 1200w"
+                    sizes="(min-width: 1024px) 56vw, 92vw" width="1200" height="750" loading="lazy" decoding="async"
+                    alt="Captura de la página pública de reservas de Black Crown Barber: formulario de reserva y calendario de disponibilidad en un tema oscuro con acentos dorados.">
+                </div>
+              </div>
+              <div class="project__content">
+                <p class="project__meta"><span>02</span> Full stack · SaaS</p>
+                <h3 class="project__title" id="p2-title">Black Crown Barber</h3>
+                <p class="project__summary">Plataforma de gestión para una barbería: reservas, dashboard, POS, CRM, contabilidad e inventario.</p>
+                <dl class="project__detail">
+                  <div><dt>Problema</dt><dd>Reservas, caja, clientes e inventario gestionados a mano o en herramientas separadas.</dd></div>
+                  <div><dt>Solución</dt><dd>Reservas públicas sin registro, panel interno con autenticación JWT y API REST en Express + MongoDB. Frontend React/TypeScript empaquetado también como app Android con Capacitor.</dd></div>
+                </dl>
+                <ul class="chips chips--small">
+                  <li>React</li><li>TypeScript</li><li>Tailwind</li><li>Zustand</li><li>Express</li><li>MongoDB</li><li>Capacitor</li>
+                </ul>
+                <div class="project__links">
+                  <a class="link-arrow" href="https://github.com/santiagosanabria-1/barberia" target="_blank" rel="noopener noreferrer">
+                    Código en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+                    <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 11 11 5M6 5h5v5" /></svg>
+                  </a>
+                  <a class="link-arrow" href="https://barberia-gilt.vercel.app" target="_blank" rel="noopener noreferrer">
+                    Demo del frontend<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+                    <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 11 11 5M6 5h5v5" /></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- 03 CineVerse -->
+          <li class="project" data-reveal>
+            <article class="project__inner" aria-labelledby="p3-title">
+              <div class="project__media">
+                <div class="project__frame">
+                  <img src="assets/img/cineverse-1200.webp"
+                    srcset="assets/img/cineverse-720.webp 720w, assets/img/cineverse-1200.webp 1200w"
+                    sizes="(min-width: 1024px) 56vw, 92vw" width="1200" height="750" loading="lazy" decoding="async"
+                    alt="Captura de la cartelera de CineVerse: hero con la película destacada, géneros, duración y botones de detalles y tráiler.">
+                </div>
+              </div>
+              <div class="project__content">
+                <p class="project__meta"><span>03</span> Frontend · JavaScript vanilla</p>
+                <h3 class="project__title" id="p3-title">CineVerse</h3>
+                <p class="project__summary">Sistema de cartelera y venta de entradas de cine, sin frameworks ni backend propio.</p>
+                <dl class="project__detail">
+                  <div><dt>Problema</dt><dd>Simular la operación de un cine —funciones, asientos y venta— evitando que dos personas compren el mismo asiento.</dd></div>
+                  <div><dt>Solución</dt><dd>Datos reales de TMDB, mapa de asientos interactivo, reservas con prevención de doble venta, pasarela de pago simulada y tickets imprimibles, persistidos en localStorage.</dd></div>
+                </dl>
+                <ul class="chips chips--small">
+                  <li>HTML</li><li>CSS</li><li>JavaScript ES6+</li><li>TMDB API</li><li>GSAP</li><li>localStorage</li>
+                </ul>
+                <div class="project__links">
+                  <a class="link-arrow" href="https://github.com/santiagosanabria-1/proyecto-javascrip-santiago" target="_blank" rel="noopener noreferrer">
+                    Código en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span>
+                    <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 11 11 5M6 5h5v5" /></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+
+          <!-- 04 EduConta AI -->
+          <li class="project" data-reveal>
+            <article class="project__inner" aria-labelledby="p4-title">
+              <div class="project__media">
+                <div class="project__frame project__frame--diagram">
+                  <svg class="diagram" viewBox="0 0 600 375" role="img" aria-labelledby="p4-diagram-title p4-diagram-desc">
+                    <title id="p4-diagram-title">Arquitectura de EduConta AI</title>
+                    <desc id="p4-diagram-desc">Un cliente consulta al agente de IA orquestado en n8n; el agente llama a la API NestJS, organizada en módulos contables, que persiste en PostgreSQL mediante Prisma y expone documentación Swagger.</desc>
+                    <defs>
+                      <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+                        <path d="M24 0H0v24" fill="none" class="diagram__grid" />
+                      </pattern>
+                    </defs>
+                    <rect width="600" height="375" fill="url(#grid)" />
+                    <g class="diagram__edges">
+                      <path d="M150 110h70" /><path d="M300 150v55" /><path d="M380 110h70" />
+                      <path d="M300 270v22" /><path class="diagram__edge--accent" d="M150 110c40 0 40-45 150-45" />
+                    </g>
+                    <g class="diagram__node">
+                      <rect x="40" y="85" width="110" height="50" rx="10" />
+                      <text x="95" y="108">Cliente</text><text x="95" y="124" class="diagram__sub">web · admin</text>
+                    </g>
+                    <g class="diagram__node diagram__node--accent">
+                      <rect x="220" y="40" width="160" height="50" rx="10" />
+                      <text x="300" y="63">Agente IA</text><text x="300" y="79" class="diagram__sub">n8n workflow</text>
+                    </g>
+                    <g class="diagram__node diagram__node--main">
+                      <rect x="220" y="100" width="160" height="50" rx="10" />
+                      <text x="300" y="123">API NestJS</text><text x="300" y="139" class="diagram__sub">JWT · Swagger</text>
+                    </g>
+                    <g class="diagram__node">
+                      <rect x="450" y="85" width="110" height="50" rx="10" />
+                      <text x="505" y="108">Archivos</text><text x="505" y="124" class="diagram__sub">PDF · Excel</text>
+                    </g>
+                    <g class="diagram__modules">
+                      <rect x="120" y="205" width="360" height="65" rx="12" />
+                      <text x="300" y="228" class="diagram__label">Módulos</text>
+                      <text x="300" y="250" class="diagram__sub">estudiantes · matrículas · pensiones · pagos · facturas · gastos · auditoría</text>
+                    </g>
+                    <g class="diagram__node diagram__node--db">
+                      <rect x="220" y="292" width="160" height="50" rx="10" />
+                      <text x="300" y="315">PostgreSQL</text><text x="300" y="331" class="diagram__sub">Prisma · 17 modelos</text>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="project__content">
+                <p class="project__meta"><span>04</span> Backend · IA · <span class="status">En desarrollo</span></p>
+                <h3 class="project__title" id="p4-title">EduConta AI</h3>
+                <p class="project__summary">Asistente contable y financiero para la gestión administrativa de una institución educativa.</p>
+                <dl class="project__detail">
+                  <div><dt>Problema</dt><dd>Matrículas, pensiones, pagos, facturas y proveedores gestionados en hojas de cálculo, sin trazabilidad.</dd></div>
+                  <div><dt>Solución</dt><dd>API NestJS modular sobre PostgreSQL con Prisma, auditoría de operaciones y documentación Swagger; un agente de IA en n8n responde consultas en lenguaje natural apoyándose en los endpoints del backend.</dd></div>
+                </dl>
+                <ul class="chips chips--small">
+                  <li>NestJS</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li><li>Passport JWT</li><li>n8n</li><li>Docker</li>
+                </ul>
+                <p class="project__note">Repositorio privado — en construcción.</p>
+              </div>
+            </article>
+          </li>
+        </ol>
+
+        <div class="more-work">
+          <h3 class="more-work__title" data-reveal>Otros proyectos</h3>
+          <ul class="more-work__list">
+            <li class="more-work__item" data-reveal>
+              <div>
+                <h4>Sports Analyst</h4>
+                <p>Backend NestJS que consolida partidos, forma reciente, H2H y cuotas de API-Sports y compara la probabilidad implícita del mercado con un modelo propio.</p>
+              </div>
+              <p class="more-work__stack">NestJS · MongoDB · REST</p>
+            </li>
+            <li class="more-work__item" data-reveal>
+              <div>
+                <h4>WA Glass</h4>
+                <p>Sitio corporativo para una empresa de instalación de vidrio y aluminio, centrado en su portafolio de obras. En desarrollo.</p>
+              </div>
+              <p class="more-work__stack">Next.js · TypeScript · Tailwind · GSAP</p>
+            </li>
+            <li class="more-work__item" data-reveal>
+              <div>
+                <h4>
+                  <a href="https://github.com/santiagosanabria-1/juego-cartas-santiago-sanabria" target="_blank" rel="noopener noreferrer">
+                    Card Wars Bucaramanga<span class="visually-hidden"> (repositorio en GitHub, se abre en una pestaña nueva)</span>
+                    <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5 11 11 5M6 5h5v5" /></svg>
+                  </a>
+                </h4>
+                <p>Juego de cartas web ambientado en Bucaramanga, con datos servidos por JSON Server.</p>
+              </div>
+              <p class="more-work__stack">JavaScript · JSON Server</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head section-head--row">
+          <div>
+            <p class="section-index" data-reveal>04 — Proceso</p>
+            <h2 class="section-title" id="process-title" data-reveal data-delay="1">Cómo llevo una idea a producción.</h2>
+          </div>
+        </header>
+
+        <ol class="process__steps" data-process>
+          <li class="step" data-reveal>
+            <span class="step__num">01</span>
+            <h3 class="step__title">Descubrir</h3>
+            <p>Entender quién usa el sistema y qué problema concreto resuelve antes de escribir código.</p>
+          </li>
+          <li class="step" data-reveal data-delay="1">
+            <span class="step__num">02</span>
+            <h3 class="step__title">Diseñar</h3>
+            <p>Modelo de datos, contratos de API y flujos de interfaz definidos en un plan explícito.</p>
+          </li>
+          <li class="step" data-reveal data-delay="2">
+            <span class="step__num">03</span>
+            <h3 class="step__title">Construir</h3>
+            <p>Cambios incrementales, con Git Flow y commits convencionales, verificables en cada paso.</p>
+          </li>
+          <li class="step" data-reveal data-delay="3">
+            <span class="step__num">04</span>
+            <h3 class="step__title">Probar</h3>
+            <p>Tests de integración contra una base real y revisión en varios anchos de pantalla.</p>
+          </li>
+          <li class="step" data-reveal data-delay="4">
+            <span class="step__num">05</span>
+            <h3 class="step__title">Desplegar</h3>
+            <p>Docker Compose para servicios; Vercel y GitHub Pages para frontends estáticos.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__art" aria-hidden="true">
+        <img src="assets/img/contact-1100.webp"
+          srcset="assets/img/contact-720.webp 720w, assets/img/contact-1100.webp 1100w, assets/img/contact-1600.webp 1600w"
+          sizes="(min-width: 1024px) 80vw, 140vw" width="1100" height="431" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="container contact__inner">
+        <p class="section-index" data-reveal>05 — Contacto</p>
+        <h2 class="contact__title" id="contact-title" data-reveal data-delay="1">Construyamos algo.</h2>
+        <p class="contact__lead" data-reveal data-delay="2">
+          ¿Tienes un proyecto, una vacante o una idea que quieras llevar a producción? Escríbeme.
+        </p>
+        <div class="contact__actions" data-reveal data-delay="3">
+          <a class="button button--primary" href="mailto:shagosanabria@gmail.com">
+            Contáctame
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" /></svg>
+          </a>
+        </div>
+        <ul class="contact__links" data-reveal data-delay="4">
+          <li>
+            <a href="mailto:shagosanabria@gmail.com">
+              <span class="contact__label">Email</span>
+              <span>shagosanabria@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/santiagosanabria-1" target="_blank" rel="noopener noreferrer">
+              <span class="contact__label">GitHub</span>
+              <span>santiagosanabria-1<span class="visually-hidden"> (se abre en una pestaña nueva)</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span data-year>2026</span> Santiago Sanabria. Diseñado y desarrollado a mano; assets 3D creados en Blender.</p>
+      <a href="#home" class="site-footer__top">Volver arriba</a>
+    </div>
+  </footer>
+</body>
+</html>
